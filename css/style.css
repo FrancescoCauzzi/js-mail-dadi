@@ -7,6 +7,19 @@ body {
   color: white;
 }
 
+/* #partial-user{
+  display: none;
+}
+
+#partial-computer{
+  display: none;
+
+} */
+
+.__partial-score{
+  display: none;
+}
+
 #winner-banner{
   display: none;
 }
