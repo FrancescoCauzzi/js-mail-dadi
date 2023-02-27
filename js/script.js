@@ -36,6 +36,7 @@ let userWin = [];
 let computerWin = [];
 
 while (userWin.length < 5 && computerWin.length < 5){
+  console.log(userWin, computerWin);
     
   // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
   let randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -54,19 +55,19 @@ while (userWin.length < 5 && computerWin.length < 5){
   // vince il primo che arriva a 5 risposte esatte
   if(userGuess === randomNumber){
     userWin.push('1')
+    
     alert('Hai indovinato!');
-    console.log(userWin, computerWin);
     
 
   }else if (computerGuess === randomNumber){
     computerWin.push('1')
+    
     alert('Il computer ha indovinato!');
-    console.log(userWin, computerWin);
 
     
   }else{
+    
     alert('Mi dispiace, nessuno ha indovinato!');
-    console.log(userWin, computerWin);
 
   }
   
