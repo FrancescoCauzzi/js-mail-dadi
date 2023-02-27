@@ -54,18 +54,20 @@ while (userWin.length < 5 && computerWin.length < 5){
   // vince il primo che arriva a 5 risposte esatte
   if(userGuess === randomNumber){
     userWin.push('1')
-    console.log(userWin);
     alert('Hai indovinato!');
+    console.log(userWin, computerWin);
     
 
   }else if (computerGuess === randomNumber){
     computerWin.push('1')
-    console.log(computerWin);
     alert('Il computer ha indovinato!');
+    console.log(userWin, computerWin);
+
     
   }else{
     alert('Mi dispiace, nessuno ha indovinato!');
-    
+    console.log(userWin, computerWin);
+
   }
   
   
