@@ -20,19 +20,42 @@
 
 <body>
   <header class="mb-5">
-    <h1 class="text-center"> Esercizio Email & Dadi</h1>
+    <h1 class="text-center p-4"> Esercizio Email & Dadi</h1>
 
   </header>
   <main>
     <section class="__esercizio-email mb-5">
       <div class="container">
         <h2 class="text-uppercase ">Esercizio email</h2>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="my-submit-btn">Submit</button>
+        </form>
 
       </div>
     </section>
-    <section class="__esercizio-dadi">
-      <div class="container">
+    <hr>
+    <section class="__esercizio-dadi container">
+      <div class="">
         <h2 class="text-uppercase ">Esercizio dadi</h2>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Man vs Pc dice game</label>
+
+        <input type="number" class="form-control mb-2" id="userGuessInput">
+        <button type="button" class="btn btn-primary" id="start-game">Start Game</button>
+
+      </div>
+      <div class="__output-result">
+        <div class="alert alert-secondary " role="alert" id="winner-banner">
+
+        </div>
+
       </div>
 
     </section>
