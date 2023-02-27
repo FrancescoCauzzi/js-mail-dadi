@@ -31,7 +31,7 @@ while (true){
 
 */
 // esercizio 2 dadi
-
+/*
 let userWin = [];
 let computerWin = [];
 
@@ -82,3 +82,4 @@ while (userWin.length < 5 && computerWin.length < 5){
   }
 
 }
+*/
