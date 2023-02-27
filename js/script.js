@@ -32,11 +32,11 @@ while (true){
 */
 // esercizio 2 dadi
 
-const userWin = [];
-const computerWin = [];
+let userWin = [];
+let computerWin = [];
 
 while (userWin.length < 5 && computerWin.length < 5){
-  console.log(userWin, computerWin);
+    
   // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
   let randomNumber = Math.floor(Math.random() * 6) + 1;
   
@@ -56,14 +56,18 @@ while (userWin.length < 5 && computerWin.length < 5){
     userWin.push('1')
     console.log(userWin);
     alert('Hai indovinato!');
+    
 
   }else if (computerGuess === randomNumber){
     computerWin.push('1')
     console.log(computerWin);
     alert('Il computer ha indovinato!');
+    
   }else{
     alert('Mi dispiace, nessuno ha indovinato!');
+    
   }
+  
   
   // controlla se quqalcuno ha vinto
   if (userWin.length === 5) {
