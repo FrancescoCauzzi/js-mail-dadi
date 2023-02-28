@@ -1,20 +1,22 @@
 
 // esercizo 1 email
 const emails = ["lknope@pawneeparks.gov", "eliza.doolittle@otmail.com", "pinocchio@realboys.com", "hodor@hodor.hodor","giovannimucciaccia@gmail.com"];
+// Chiedi all’utente la sua email,
 
 let mySubmitBtnEl = document.getElementById('my-submit-btn');
+let userEmail = document.getElementById('InputEmail1');
 
 mySubmitBtnEl.addEventListener('click', function(){
   while (true){
-    // Chiedi all’utente la sua email,
-    let userEmail = document.getElementById('InputEmail1').value;
-    console.log(userEmail);
+    
+    console.log(userEmail.value);
+    
     // let userEmail = prompt('Inserisci la tua email');
     const allowed = [];
     for( let i = 0; i < emails.length; i++){
     // controlla che sia nella lista di chi può accedere,
     
-      if(userEmail === emails[i]){
+      if(userEmail.value === emails[i]){
         allowed.push(userEmail);
       }else{
         continue;
@@ -36,10 +38,6 @@ mySubmitBtnEl.addEventListener('click', function(){
 
 })
 
-
-
-
-
 // esercizio 2 dadi
 
 let userWin = [];
@@ -48,12 +46,9 @@ let computerWin = [];
 
 const startBtnEl = document.getElementById('start-game');
 const winnerBannerEl = document.getElementById('winner-banner');
-
 const partialUserEl = document.getElementById('partial-user');
 const partialComputerEl = document.getElementById('partial-computer');
 const partialScoreEl = document.querySelector('.__partial-score');
-console.log(partialScoreEl);
-
 
 startBtnEl.addEventListener('click', function(){
   partialScoreEl.style.display = 'flex';
@@ -98,7 +93,7 @@ startBtnEl.addEventListener('click', function(){
         alert(('Mi dispiace, nessuno ha indovinato!'));
       }
               
-      // controlla se quqalcuno ha vinto
+      // controlla se qualcuno ha vinto
       if (userWin.length === 5) {
         winnerBannerEl.style.display = 'block';
         winnerBannerEl.innerHTML = `Hai vinto ${userWin.length} a ${computerWin.length}`;
